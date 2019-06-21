@@ -24,7 +24,6 @@ import org.json.JSONObject;
 
 public class SolarWatcher extends AppCompatActivity {
     private static String TAG = "Adaer";
-    private ProgressDialog progDailog;
     AlarmManager alarmMgr;
     PendingIntent pendingIntent;
     Button bBasla;
@@ -73,7 +72,7 @@ public class SolarWatcher extends AppCompatActivity {
     }
 
     private void getDataForTable() {
-        progDailog = new ProgressDialog(SolarWatcher.this);
+        ProgressDialog progDailog = new ProgressDialog(SolarWatcher.this);
         progDailog.setMessage("Yükleniyor...");
         progDailog.setIndeterminate(false);
         progDailog.setProgressStyle(ProgressDialog.STYLE_SPINNER);

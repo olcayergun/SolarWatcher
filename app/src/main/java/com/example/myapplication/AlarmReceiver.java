@@ -29,7 +29,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         GetJSON asyncTask = new GetJSON(null);
         asyncTask.setListener(new GetJSON.AsyncTaskListener() {
             @Override
-            public void onExampleAsyncTaskFinished(String s) {
+            public void onAsyncTaskFinished(String s) {
                 Log.d(TAG, "onExampleAsyncTaskFinished " + s);
                 String sTitle = "";
                 String sText;
