@@ -84,7 +84,7 @@ public class SolarWatcher extends AppCompatActivity {
         GetJSON asyncTask = new GetJSON(progDailog);
         asyncTask.setListener(new GetJSON.AsyncTaskListener() {
             @Override
-            public void onExampleAsyncTaskFinished(String s) {
+            public void onAsyncTaskFinished(String s) {
                 Log.d(TAG, "onExampleAsyncTaskFinished " + s);
                 ChargerData[] chargerData;
 
